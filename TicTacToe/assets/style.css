@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+HR+Lijeva:wght@100..400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'MontSerrat', sans-serif;
+    font-style: normal;
+    color: white;
+}
+
+body{
+    background-color: #ef7171;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    background-image: url('img/background.webp');
+    background-size: contain; /* A imagem é ajustada para caber dentro da área */
+    background-size: 50% 50%; /* A imagem ocupa metade da largura e altura */
+    background-size: cover;
+
+}
+
+h1 {
+    font-style: normal;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-family: 'Playwrite HR Lijeva';
+}
+
+
+.menu {
+    margin-bottom: 15px;
+    display: flex;
+
+}
+
+.menu h3 {
+    display: block;
+}
+
+.bloco-bot, .bloco-pessoa {
+    margin-left: 10px;
+}
+
+.tabuleiro{
+    display: grid;
+    align-items: center;
+    justify-content: center;   
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3,100px);
+    gap: 5px;
+    margin-bottom: 15px;
+}
+
+.area{
+    height: 100px;
+    width: 100px;
+    display: relative;
+    border: 2px solid white;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.area img {
+    width: 100%;
+    height: 100%;
+}
+
+.area.x::before, 
+.area.x::after{
+    content:"";
+    height: cal(100px * 0.15);
+    width: cal(100px * 0.9);
+    background: white;
+    position: absolute;
+    
+}
+
+.mensagem_p {
+    font-size: 20px;
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.bloco_mensagem button {
+    background-color: #ffffff;
+    padding: 10px 20px; /* Aumenta o espaço interno do botão */
+    border-radius: 7px;
+    font-size: 20px;
+    border: 0;
+    margin: 0;
+    font-weight: 800;
+    color: #740404;
+    margin-top: 10px; /* Adiciona espaço acima do botão */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+}
+
+.bloco_mensagem {
+    display: flex;
+    flex-direction: column; /* Para empilhar o texto e o botão verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+    margin-top: 10px; /* Adiciona um espaço acima do bloco */
+}
+
+.hidden {
+    display: none;
+}

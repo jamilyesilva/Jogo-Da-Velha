@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <title>Jogo da Velha</title>
+</head>
+<body>
+    <h1>Jogo da Velha</h1>
+
+    <nav class="menu">
+        <h3>Jogar contra:</h3>
+        <div class="bloco-pessoa">
+            <input type="radio" name="escolha" checked class="local">
+            <label for="bot">Pessoa Local</label>
+        </div>
+        
+        <div class="bloco-bot">
+            <input type="radio" name="escolha" class="bot">
+            <label for="bot">Máquina</label>
+        </div>
+
+
+
+    </nav>
+    
+    <div class="tabuleiro">
+        <div class="area" id="a1"> 
+            <img src="assets/img/transp.png"> 
+        </div>
+        <div class="area" id="a2"> 
+            <img src="assets/img/transp.png"> 
+        </div>
+        <div class="area" id="a3"> 
+            <img src="assets/img/transp.png">   
+        </div>
+        <div class="area" id="b1">
+            <img src="assets/img/transp.png">  
+        </div>
+        <div class="area" id="b2"> 
+            <img src="assets/img/transp.png"> 
+        </div>
+        <div class="area" id="b3"> 
+            <img src="assets/img/transp.png"> 
+         </div>
+        <div class="area" id="c1">
+            <img src="assets/img/transp.png"> 
+         </div>
+        <div class="area" id="c2"> 
+            <img src="assets/img/transp.png"> 
+         </div>
+        <div class="area" id="c3"> 
+            <img src="assets/img/transp.png"> 
+        </div>
+    </div>
+
+    <div class="bloco_mensagem hidden">
+        <p class="mensagem_p">Você venceu!</p>
+        <button class="botao_reiniciar">Jogar novamente!</button>
+    </div>
+
+   
+
+</body>
+<script src="assets/js/script.js"></script>
+</html>
